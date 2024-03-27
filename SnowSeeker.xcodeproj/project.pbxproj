@@ -91,6 +91,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		526AF22F2BB49B3500A7BA6D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				520CC18F2BADDA62006CE485 /* resorts.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		52B625A72BACDBE5007BAF99 = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +124,10 @@
 				520CC1972BADEABE006CE485 /* ResortView.swift */,
 				520CC19B2BADECB9006CE485 /* ResortDetailsView.swift */,
 				520CC1992BADEBFA006CE485 /* SkiDetailsView.swift */,
+				526AF22C2BB49A8200A7BA6D /* Classes */,
+				526AF22F2BB49B3500A7BA6D /* Data */,
 				526AF22E2BB49AB300A7BA6D /* Extensions */,
 				526AF22D2BB49A9500A7BA6D /* Data Parsing */,
-				526AF22C2BB49A8200A7BA6D /* Classes */,
-				520CC18F2BADDA62006CE485 /* resorts.json */,
 				52B625C32BACEAE6007BAF99 /* TutorialFiles */,
 				52B625B72BACDBE6007BAF99 /* Assets.xcassets */,
 				52B625C12BACDC0A007BAF99 /* Launch Screen.storyboard */,
