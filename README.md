@@ -4,6 +4,9 @@
 
 This is Project 16 in Paul Hudson's 100 Days of SwiftUI course. This project creates an app that takes advantage of iPad screensize but still works on iPhones. It allows the user to browse ski resorts around the world helping them find a suitable location for their next holiday.
 
+### Descriptions
+Resort information comes from Wikipedia and is licensed under CC-BY-SA https://creativecommons.org/licenses/by-sa/3.0
+
 ## Course Link
 
 Check out Paul's course for more on SwiftUI: https://www.hackingwithswift.com/100/swiftui
