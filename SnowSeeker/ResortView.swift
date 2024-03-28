@@ -86,6 +86,20 @@ struct ResortView: View {
         } message: { facility in
             Text(facility.description)
         }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    if favorites.contains(resort) {
+                        favorites.remove(resort)
+                    } else {
+                        favorites.add(resort)
+                    }
+                } label: {
+                    Image(systemName: favorites.contains(resort) ? "heart.fill" : "heart")
+                        .foregroundStyle(.red)
+                }
+            }
+        }
     }
 }
 

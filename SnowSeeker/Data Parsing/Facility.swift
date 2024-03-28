@@ -11,6 +11,28 @@ struct Facility: Identifiable {
     let id: UUID = UUID()
     var name: String
     
+    var icon: some View {
+        if let iconName = icons[name] {
+            return Image(systemName: iconName)
+                .accessibilityLabel(name)
+                .foregroundStyle(.secondary)
+        } else {
+            print("Unknown facility type: \(name)")
+            return Image(systemName: "nosign")
+                .accessibilityLabel("No Image Found")
+                .foregroundStyle(.secondary)
+        }
+    }
+    
+    var description: String {
+        if let message = descriptions[name] {
+            return message
+        } else {
+            print("Unknown facility type: \(name)")
+            return "Unknown facility type"
+        }
+    }
+    
     private let icons = [
         "Accommodation": "house",
         "Beginners": "1.circle",
@@ -27,21 +49,5 @@ struct Facility: Identifiable {
         "Family": "This resort is popular with families."
     ]
     
-    var icon: some View {
-        if let iconName = icons[name] {
-            Image(systemName: iconName)
-                .accessibilityLabel(name)
-                .foregroundStyle(.secondary)
-        } else {
-            fatalError("Unknown facility type: \(name)")
-        }
-    }
     
-    var description: String {
-        if let message = descriptions[name] {
-            message
-        } else {
-            fatalError("Unknown facility type: \(name)")
-        }
-    }
 }

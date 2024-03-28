@@ -47,7 +47,7 @@ struct ContentView: View {
                         Image(resort.country)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 40, height: 25)
                             .clipShape(.rect(cornerRadius: 5))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
